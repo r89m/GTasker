@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="573.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Open G-Code File" />
+                  <MenuItem mnemonicParsing="false" text="Save G-Code File" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Tasks">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Add New Task" />
+                  <MenuItem mnemonicParsing="false" text="Remove Selected Task(s)" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="911.0">
+         <children>
+            <VBox prefHeight="467.0" prefWidth="286.0">
+               <children>
+                  <Label text="Input G-Code:" />
+                  <HBox prefHeight="0.0" prefWidth="195.0">
+                     <children>
+                        <TextField prefHeight="25.0" prefWidth="168.0" />
+                        <Button mnemonicParsing="false" text="Open..." />
+                     </children>
+                  </HBox>
+                  <ListView prefHeight="358.0" prefWidth="286.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="409.0" prefWidth="218.0">
+               <children>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="+" />
+                        <Button mnemonicParsing="false" text="-" />
+                        <Button mnemonicParsing="false" text="..." />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="413.0" prefWidth="244.0">
+               <children>
+                  <Label text="Output G-Code:" />
+                  <HBox prefHeight="0.0" prefWidth="244.0">
+                     <children>
+                        <TextField />
+                        <Button mnemonicParsing="false" text="Save" />
+                     </children>
+                  </HBox>
+                  <ListView prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

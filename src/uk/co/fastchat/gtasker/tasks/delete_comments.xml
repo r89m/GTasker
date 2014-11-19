@@ -1,0 +1,12 @@
+<task id="GUID" name="Delete Comments">
+    <action type="FindAndReplace">
+        <linebyline>true</linebyline>
+        <find>\(.*\)</find>
+        <replace></replace>
+    </action>
+    <action type="FindAndReplace">
+        <linebyline>true</linebyline>
+        <find>\;.*</find>
+        <replace></replace>
+    </action>
+</task>

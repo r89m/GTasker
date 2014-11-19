@@ -1,0 +1,10 @@
+<task id="GUID2" name="Laser: Approach Before Lase">
+    <action type="FindAndReplace">
+        <linebyline>false</linebyline>
+        <find>(G01 Z[0-9\.]{5})\n(M106)</find>
+        <replace>
+            <group>$2</group>
+            <group>$1</group>
+        </replace>
+    </action>
+</task>
